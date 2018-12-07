@@ -6,7 +6,6 @@
 <li>Build a Random Forest Regression Model to predict the goal difference for a match</li>
 <li>Simulate 2018 World Cup matches and generate a distribution of possible champions</li>
 </ul>
-*** 
 
 ## Data processing
 Our initial dataset contains more than 30,000 international matches from 1950 to 2017. Also, with domain knowledge in soccer, we cleaned and processed data as the followings:

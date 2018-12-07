@@ -1,7 +1,7 @@
 # SoccerAnalysis
 
 ## Objective
-Investigate factors that might affect a soccer team’s performance
+<li>Investigate factors that might affect a soccer team’s performance<\li>
 Build a Random Forest Regression Model to predict the goal difference for a match
 Simulate 2018 World Cup matches and generate a distribution of possible champions
 

@@ -2,41 +2,45 @@
 
 ## Objective
 <ul>
-<li>Investigate factors that might affect a soccer team’s performance<\li>
-<li>Build a Random Forest Regression Model to predict the goal difference for a match<\li>
-<li>Simulate 2018 World Cup matches and generate a distribution of possible champions<\li>
-<\ul>
+<li>Investigate factors that might affect a soccer team’s performance</li>
+<li>Build a Random Forest Regression Model to predict the goal difference for a match</li>
+<li>Simulate 2018 World Cup matches and generate a distribution of possible champions</li>
+</ul>
 *** 
 
 ## Data processing
 Our initial dataset contains more than 30,000 international matches from 1950 to 2017. Also, with domain knowledge in soccer, we cleaned and processed data as the followings:
 <ul>
-<li>We added two new variables,(team1Home, team2Home)to indicate whether or not the teams were playing at home.<\li>
-We exclude the friendly matches and outliers, like some teams would score more than 10 goals in a single match for our analysis.
-We made a reverse for each entry to reflect the result for every team.
-We merged various datasets in order to map confederation strength coefficient for each team. 
+<li>We added two new variables,(team1Home, team2Home)to indicate whether or not the teams were playing at home.</li>
+<li>We exclude the friendly matches and outliers, like some teams would score more than 10 goals in a single match for our analysis.</li>
+<li>We made a reverse for each entry to reflect the result for every team.</li>
+<li>We merged various datasets in order to map confederation strength coefficient for each team.</li>
 <\ul>
+<br>
 To simulate the World Cup, we merged the world cup group match schedule with the feature data frame which contains all the training variables for each team. 
 ***
 
 ## Statistical analysis
-We plotted the average total score per year from 1956 to 2017 using groupby function and seaborn/matplotlib package.
-We plotted the winning percentage for each team with friendly matches and without friendly matches.
-We compared the winning percentage for each team whether it was playing at home or not.
+<li>We plotted the average total score per year from 1956 to 2017 using groupby function and seaborn/matplotlib package.</li>
+<li>We plotted the winning percentage for each team with friendly matches and without friendly matches.</li>
+<li>We compared the winning percentage for each team whether it was playing at home or not.</li>
 ***
 
 ## Model building
- We extracted three main features to predict the score for each team.
-Feature1, if a team played at home.
-Feature2, the league strength for both team1 and team2; we merged teams dataframe into matches.
-Feature3, the winning, drawing, losing rate and the average goal difference of the recent 5, 10, 20 and 40 matches for each team.
+We extracted three main features to predict the score for each team.
+<li>Feature1, if a team played at home.
+<li>Feature2, the league strength for both team1 and team2; we merged teams dataframe into matches.
+<li>Feature3, the winning, drawing, losing rate and the average goal difference of the recent 5, 10, 20 and 40 matches for each team.
+<br>
 We trained our model using random forest regressor with GridSearchCV to make predictions about the goal difference and evaluated its performance by the RMSE measure.
 We also built a random forest classifier to predict categorical variable, which converted goal difference to win-draw-lose. The accuracy rate thus has increased from 0.260 to 0.539.
 ***
 
 ## Simulate 2018 Russia World Cup
 We reconstructed a dataframe with 32 world cup teams, simulated each game and predicted win-draw-lose result. We randomly alternated the sequence of team1 and team2 to produce more outcomes. 
+<br>
 Each simulation consists of a group stage and several knockout stages. Teams only play against each other within their own groups. The group winners and the runner-ups would move on to the knockout stages (round of 16, quarter finals, semi finals and final). The simulation strictly follows the FIFA World Cup rules and reflects as much reality as possible. 
+<br>
 We simulated the World Cups 10,000 times and got a distribution of possible champions over the 32 world cup teams.
 
 

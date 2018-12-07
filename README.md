@@ -10,7 +10,7 @@
 ## Data processing
 Our initial dataset contains more than 30,000 international matches from 1950 to 2017. Also, with domain knowledge in soccer, we cleaned and processed data as the followings:
 <ul>
-<li>We added two new variables,(`<addr>`team1Home, `<addr>`team2Home)to indicate whether or not the teams were playing at home.</li>
+<li>We added two new variables,(```python team1Home```, `<addr>`team2Home)to indicate whether or not the teams were playing at home.</li>
 <li>We exclude the friendly matches and outliers, like some teams would score more than 10 goals in a single match for our analysis.</li>
 <li>We made a reverse for each entry to reflect the result for every team.</li>
 <li>We merged various datasets in order to map confederation strength coefficient for each team.</li></ul>

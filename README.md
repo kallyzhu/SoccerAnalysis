@@ -13,8 +13,8 @@ Our initial dataset contains more than 30,000 international matches from 1950 to
 <li>We added two new variables,(team1Home, team2Home)to indicate whether or not the teams were playing at home.</li>
 <li>We exclude the friendly matches and outliers, like some teams would score more than 10 goals in a single match for our analysis.</li>
 <li>We made a reverse for each entry to reflect the result for every team.</li>
-<li>We merged various datasets in order to map confederation strength coefficient for each team.</li>
-<\ul>
+<li>We merged various datasets in order to map confederation strength coefficient for each team.</li></ul>
+
 To simulate the World Cup, we merged the world cup group match schedule with the feature data frame which contains all the training variables for each team. 
 
 ## Statistical analysis

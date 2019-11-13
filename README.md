@@ -7,6 +7,10 @@
 <li>Simulate 2018 World Cup matches and generate a distribution of possible champions</li>
 </ul>
 
+## Main Deliverables
+1. Main analysis/machine learning work could be found [here](https://github.com/nding17/SoccerAnalysis/blob/master/soccer-matches-analysis.ipynb)
+2. Project report [here](https://github.com/nding17/SoccerAnalysis/blob/master/soccer-analysis-report.pdf)
+
 ## Data processing
 Our initial dataset contains more than 30,000 international matches from 1950 to 2017. Also, with domain knowledge in soccer, we cleaned and processed data as the followings:
 <ul>
